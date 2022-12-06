@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_index.css">
+    <title>Авторизация</title>
+    <!-- <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(){
+            let btn = document.querySelector('input[type=submit]');
+            btn.addEventListener('click', async function(event){
+                event.preventDefault();
+                // let login = document.querySelector('input[name=login]').value;
+                // let password = document.querySelector('input[name=password]').value;
+                let respons = await fetch("/login", {
+                    method: "POST",
+                    body: new FormData(document.querySelector('form'))
+                });
+                //let respons_json = await respons.json();
+                // if(respons_json.success){
+                //     let body = document.querySelector('body');
+                //     body.style.backgroundColor = 'white';
+                //     body.style.display = 'block';
+                //     body.innerHTML = respons_json.message;
+                // }
+            })
+        })
+    </script> -->
+</head>
+<body>
+    <div class="placeholder"></div>
+    <h1>Обратная связь</h1>
+    <form method="post" action="Лаба_5.html" >
+        <input type="text" name="login" placeholder="Ваша почта"/>
+        <input type="text" name="Name" placeholder="Ваше имя">
+        <input type="text" name="first_Name" placeholder="Ваша фамилия">
+        <p><textarea name="comment"  placeholder="Коментарий" style="width: 70%;"></textarea></p>
+        <p><input name="client" type="radio">Я первый раз на сайте</p>
+        <p><input name="client" type="radio" checked>Я Постоянный клиент</p>
+        <input type="submit" value="Enter" class="button"/>
+        <input type="reset" value="Clear" class="button"/>
+        <h4><a href="Лаба_5.html">Назад</a></h4>
+    </form>
+    <div class="placeholder"></div>
+</body>
+</html>
